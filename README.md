@@ -77,7 +77,7 @@ Si deseas correr este proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone [https://github.com/Manuseq94/AUSEN.git](https://github.com/Manuseq94/AUSEN.git)
+   git clone https://github.com/Manuseq94/AUSEN.git
    cd AUSEN
 
 2. **Crear y activar entorno virtual**
