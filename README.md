@@ -29,7 +29,9 @@ El objetivo principal es brindar transparencia a los empleados sobre sus días d
 ## ✨ Características Principales
 
 * **📊 Dashboard Interactivo:** Visualización de métricas clave (ausentismo mensual, distribución diaria, empleados activos) para la toma de decisiones.
-* **🧮 Cálculo Automático (LCT):** Algoritmo inteligente que calcula los días de vacaciones correspondientes según la antigüedad del empleado (basado en la Ley de Contrato de Trabajo Argentina).
+* **📅 Motor Inteligente de Feriados (Nuevo):** Integración con API de feriados nacionales para importación automática al calendario.
+* **⚡ Cálculo Flexible de Días:** Al solicitar vacaciones, el sistema permite elegir entre descontar **"Días Corridos"** o **"Solo Días Hábiles"**, detectando y saltando automáticamente fines de semana y feriados cargados en el sistema.
+* **🧮 Cálculo Automático (LCT):** Algoritmo que determina los días de vacaciones correspondientes según la antigüedad del empleado (basado en la Ley de Contrato de Trabajo Argentina).
 * **👥 Gestión de Empleados:** Sistema completo de administración de perfiles (ABM) con historial laboral y datos personales.
 * **📩 Notificaciones Automáticas:** Envío de correos electrónicos a RRHH y supervisores cada vez que se genera o aprueba una solicitud.
 * **📄 Reportes PDF:** Generación instantánea de reportes de saldos y solicitudes listos para imprimir y firmar.
@@ -69,6 +71,7 @@ El objetivo principal es brindar transparencia a los empleados sobre sus días d
 ## 🛠️ Stack Tecnológico
 
 * **Backend:** Python, Django Framework.
+* **Librerías Clave:** `holidays` (Cálculo de fechas), `xhtml2pdf` (Reportes).
 * **Base de Datos:** SQLite (Entorno Local) / MySQL (Producción).
 * **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript.
 * **Gráficos:** Chart.js.
@@ -81,7 +84,7 @@ Si deseas correr este proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/Manuseq94/AUSEN.git
+   git clone [https://github.com/Manuseq94/AUSEN.git](https://github.com/Manuseq94/AUSEN.git)
    cd AUSEN
 
 2. **Crear y activar entorno virtual**
