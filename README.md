@@ -14,7 +14,7 @@
 
 <br>
 
-<img src="screenshots/dashboard%201%20light.png" alt="Dashboard Principal Light" width="100%">
+<img src="screenshots/light_mode.png" alt="Dashboard Principal Light" width="100%" style="border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
 
 </div>
 
@@ -29,41 +29,38 @@ El objetivo principal es brindar transparencia a los empleados sobre sus días d
 ## ✨ Características Principales
 
 * **📊 Dashboard Interactivo:** Visualización de métricas clave (ausentismo mensual, distribución diaria, empleados activos) para la toma de decisiones.
-* **📅 Motor Inteligente de Feriados (Nuevo):** Integración con API de feriados nacionales para importación automática al calendario.
+* **📅 Motor Inteligente de Feriados:** Integración con API de feriados nacionales para importación automática al calendario.
 * **⚡ Cálculo Flexible de Días:** Al solicitar vacaciones, el sistema permite elegir entre descontar **"Días Corridos"** o **"Solo Días Hábiles"**, detectando y saltando automáticamente fines de semana y feriados cargados en el sistema.
 * **🧮 Cálculo Automático (LCT):** Algoritmo que determina los días de vacaciones correspondientes según la antigüedad del empleado (basado en la Ley de Contrato de Trabajo Argentina).
 * **👥 Gestión de Empleados:** Sistema completo de administración de perfiles (ABM) con historial laboral y datos personales.
 * **📩 Notificaciones Automáticas:** Envío de correos electrónicos a RRHH y supervisores cada vez que se genera o aprueba una solicitud.
 * **📄 Reportes PDF:** Generación instantánea de reportes de saldos y solicitudes listos para imprimir y firmar.
-* **🔐 Seguridad:** Sistema de autenticación robusto con diferenciación de roles (Administrador vs. Usuario estándar).
+* **🔐 Seguridad:** Sistema de autenticación robusto con panel de configuración protegido para administradores.
 
 ---
 
 ## 📸 Tour del Sistema
 
-### Flujo de Solicitudes
-| Formulario de Solicitud | Opciones de Licencia |
+### Gestión del Personal y Perfiles
+| Nómina de Empleados | Portal del Empleado (Legajo) |
 | :---: | :---: |
-| <img src="screenshots/solicitar%20vacaciones.png" alt="Solicitar Vacaciones" width="100%"> | <img src="screenshots/solicitar%20opciones.png" alt="Opciones de Solicitud" width="100%"> |
+| <img src="screenshots/nomina_empleados.png" alt="Nomina Empleados" width="100%" style="border-radius: 8px;"> | <img src="screenshots/portal_empleado.png" alt="Portal Empleado" width="100%" style="border-radius: 8px;"> |
 
-### Gestión Administrativa
-| Nómina de Empleados | Gestión de Usuarios (Roles) |
+### Motor de Ausencias y Configuración
+| Cálculo Inteligente de Fechas | Panel de Configuración de Sistema |
 | :---: | :---: |
-| <img src="screenshots/nomina%20empleados.png" alt="Nomina Empleados" width="100%"> | <img src="screenshots/gestion%20de%20usuarios.png" alt="Gestion Usuarios" width="100%"> |
+| <img src="screenshots/calculo_inteligente.png" alt="Cálculo Inteligente" width="100%" style="border-radius: 8px;"> | <img src="screenshots/config.png" alt="Configuración" width="100%" style="border-radius: 8px;"> |
 
-### Legajo Digital
-| Detalle de Empleado (Perfil) | Historial y Documentación |
+### Herramientas y Visualización
+| Motor de Feriados | Interfaz Adaptativa (Modo Oscuro) |
 | :---: | :---: |
-| <img src="screenshots/ficha%20empleado%201.png" alt="Ficha Empleado 1" width="100%"> | <img src="screenshots/ficha%20empleados%202.png" alt="Ficha Empleado 2" width="100%"> |
+| <img src="screenshots/feriados.png" alt="Gestión de Feriados" width="100%" style="border-radius: 8px;"> | <img src="screenshots/dark_mode.png" alt="Modo Oscuro" width="100%" style="border-radius: 8px;"> |
 
-### Visualización y Acceso (Dark Mode)
-| Calendario de Ausencias | Panel Métricas Oscuro |
-| :---: | :---: |
-| <img src="screenshots/calendario%20dark.png" alt="Calendario Dark" width="100%"> | <img src="screenshots/dashboard%201%20dark.png" alt="Dashboard Dark" width="100%"> |
+<br>
 
 <div align="center">
-  <img src="screenshots/login.png" alt="Login Screen" width="50%">
-  <p><i>Pantalla de Acceso Seguro</i></p>
+  <img src="screenshots/login.png" alt="Login Screen" width="50%" style="border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+  <p><i>Pantalla de Acceso Seguro (Autenticación)</i></p>
 </div>
 
 ---
@@ -72,10 +69,10 @@ El objetivo principal es brindar transparencia a los empleados sobre sus días d
 
 * **Backend:** Python, Django Framework.
 * **Librerías Clave:** `holidays` (Cálculo de fechas), `xhtml2pdf` (Reportes).
-* **Base de Datos:** SQLite (Entorno Local) / MySQL (Producción).
-* **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript.
-* **Gráficos:** Chart.js.
-* **Despliegue:** PythonAnywhere (Gunicorn + WhiteNoise).
+* **Base de Datos:** PostgreSQL (Producción) / SQLite (Local).
+* **Frontend:** HTML5, CSS3, Bootstrap 5.3, JavaScript.
+* **Gráficos:** Chart.js, FullCalendar.
+* **Despliegue:** Render + Neon.tech (Gunicorn & WhiteNoise).
 * **Control de Versiones:** Git & GitHub.
 
 ## 🚀 Instalación y Despliegue Local
